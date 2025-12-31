@@ -137,18 +137,18 @@ section {
 .slogan {
   font-weight: 700;
   font-size: 1.2rem;
-  width: 50%;
-  
+  width: 50%;  
 }
 
 .main-nav ul {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+  text-align: center;
 }
 
 .main-nav a {
-  padding: 0.5rem;
+  padding: 0.5rem;  
 }
 
 .main-nav a:focus-visible,
@@ -326,6 +326,13 @@ section {
   gap: 1.5rem;
 }
 
+.seccion .seccion_lista_equipo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+}
+
 .seccion .seccion_lista_galeria {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -348,6 +355,13 @@ section {
   background-color: var(--color-white);
   padding: 1.5rem;
   border-radius: 6px;
+}
+
+.tarjeta_con_borde {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 3px, solid, var(--color-primary);
 }
 
 /*.seccion_lista .izquierda{
@@ -380,15 +394,6 @@ section {
   flex-direction: column;
   gap: 1.5rem;
 }*/
-
-.tarjeta_con_borde {
-  background-color: var(--color-white);
-  padding: 1.5rem;
-  border-radius: 6px;
-  border-color: var(--color-primary);
-  border-width: 3px;
-  border-style: solid;
-}
 
 .redondo{
   border-radius: 90px;
@@ -452,7 +457,7 @@ section {
   text-align: center;
 }
 
-.equipodatos h3{
+.equipo_datos h3{
   margin: 0;
   font-size: 18px;
 }
@@ -609,9 +614,8 @@ section {
     gap: 20px;
   }
 
-  .tarjeta_sin_borde .equipo{
+  .seccion .seccion_lista_equipo{
     grid-template-columns: repeat(4, 1fr);
-    align-items: baseline;
     gap: 20px;
   }
 
