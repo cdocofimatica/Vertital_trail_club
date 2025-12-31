@@ -109,9 +109,21 @@ section {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 1rem;
+
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   gap: 1rem;
+}
+
+.header-top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-cta{
+  width: 100%;
 }
 
 .logo{
@@ -127,7 +139,7 @@ section {
 
 .main-nav ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.5rem;
 }
 
@@ -182,6 +194,14 @@ section {
   height: 30px;
 }
 
+.etiqueta{
+  font-weight: 600;
+}
+
+.cursiva{
+  font-style: italic;
+  line-height: 1.6;
+}
 /* ===================================================
    7. HOME – SECCIONES ESPECÍFICAS
 =================================================== */
@@ -197,14 +217,52 @@ section {
   align-items: flex-end;      
   width: 100%;
   height: 300px;
-   /* Ruta de tu imagen */
-  background-image: url('../assets/images/Panorama_Teide_BW.jpg');
+  
   /* 'cover' para que cubra todo el div, 'contain' para que quepa entera */
   background-size: cover; 
   /* Centra la imagen */
   background-position: center; 
   /* Evita que la imagen se repita */
   background-repeat: no-repeat; 
+}
+
+.index{
+   /* Ruta de tu imagen */
+  background-image: url('../assets/images/Panorama_Teide_BW.jpg');
+}
+
+.about{
+   /* Ruta de tu imagen */
+  background-image: url('../assets/images/Pano06.jpg'); 
+  align-items: start;
+}
+
+.activities{
+  /* Ruta de tu imagen */
+  background-image: url('../assets/images/Cabecera_Actividades.jpg');
+  align-items: start;
+}
+
+.community{
+  /* Ruta de tu imagen */
+  background-image: url('../assets/images/Cabecera_comunidad.jpg');
+  align-items: start;
+}
+/*.about h2{
+  font-size: 3rem;
+  background-color: rgba(130, 110, 96, 0.5);
+  margin: 0;
+  border-radius: 5px;  
+  padding: 5px;  
+}*/
+
+.hero-content h2{
+  font-size: 3rem;
+  /*He utilizado un color RGBA para aplicar transparencia únicamente al fondo, manteniendo la legibilidad del texto*/
+  background-color: rgba(130, 110, 96, 0.5);
+  margin-top: 0;
+  border-radius: 5px;
+  padding: 5px;  
 }
 
 .hero p {
@@ -217,8 +275,62 @@ section {
 }
 
 .seccion .seccion_lista {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.seccion .seccion_lista_acceso {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.seccion .seccion_lista_que {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.seccion .seccion_lista_actividades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.seccion .seccion_lista_testimonios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.seccion .seccion_lista_historias {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.seccion .seccion_lista_cronica {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.seccion .seccion_lista_galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.seccion .seccion_lista_videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.seccion .seccion_lista_historias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -226,6 +338,25 @@ section {
   background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 6px;
+}
+
+/*.seccion_lista .izquierda{
+  max-width: 70%;
+}
+
+.seccion_lista .derecha{
+  max-width: 30%;
+}*/
+
+/*.historia{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 20px;
+}*/
+
+.tarjeta_sin_borde .filosofia{
+  max-width: 50%;
+  grid-template-columns: repeat(2, 1fr);
 }
 /*
 .que_hacemos .que_hacemos_lista {
@@ -248,6 +379,91 @@ section {
   border-width: 3px;
   border-style: solid;
 }
+
+.redondo{
+  border-radius: 90px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.equipo{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.persona{
+  position: relative;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.persona img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.persona_datos{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.video img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video_datos{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.equipodatos h3{
+  margin: 0;
+  font-size: 18px;
+}
+
+.equipo_datos p{
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+/*
+.perfil{
+  display: flex;
+  align-items: flex-end;      
+  width: 100%; 
+  /*padding: 3rem 1.5rem;
+  text-align: center; 
+}*/
+/*
+.foto_perfil{
+  border-radius: 20px;
+  max-width: 90%;  
+}*/
 /*
 .testimonios .testimonios_lista {
   display: flex;
@@ -300,21 +516,23 @@ section {
 .icono_con_texto {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  /*gap: 1.5rem;*/
   align-items: center;
   border: #896459;
   border-style: solid;
   border-radius: 5px;
-  width: 50%;  
-  padding: 3px;
+  width: 25%;  
+  padding: 0px;
+  background-color: #DBC3A7;
 }
 
 .texto_del_icono {
-  font-size: 1.5rem;
+  font-size: 0.5rem;
   margin-block-start: 0px;
   margin-block-end: 0px;  
   margin-bottom: 0px;
-  text-align: center;
+  text-align: center;  
+  display: none;
 }
 
 
@@ -322,12 +540,21 @@ section {
    9. MEDIA QUERIES – VERSIÓN DE ESCRITORIO
 =================================================== */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
   .header-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .header-bottom{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header-cta{
+    width: auto;
   }
 
   .main-nav ul {
@@ -336,20 +563,81 @@ section {
   }
 
   main {
+    flex-direction: row;
     max-width: var(--max-width);
     margin: 0 auto;
   }
 
-  .seccion .seccion_lista {
-    flex-direction: row;
+  .seccion .seccion_lista{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .seccion .seccion_lista_acceso{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .seccion .seccion_lista_que{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .seccion .seccion_lista_actividades{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .seccion .seccion_lista_testimonios{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .seccion .seccion_lista_historia {    
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+  }
+
+  .tarjeta_sin_borde .equipo{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
   }
 
   .tarjeta_sin_borde {
     flex: 1;
   }
+
+  .tarjeta_sin_borde .filosofia{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
   
   .tarjeta_con_borde {
     flex: 1;
+  }
+
+  .icono_con_texto {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    border: #896459;
+    border-style: solid;
+    border-radius: 5px;
+    width: 60%;  
+    padding: 3px;
+    color: #DBC3A7;
+  }
+
+  .icono_con_texto a{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .texto_del_icono {  
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;  
+    margin-bottom: 0px;
+    text-align: center;    
+    display: flex;
+    color: #1A1A1A;
   }
   /*.que_hacemos .que_hacemos_lista {
     flex-direction: row;
