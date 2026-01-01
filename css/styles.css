@@ -229,7 +229,7 @@ section {
   gap: 0.5rem;
 }
 
-.icono-dificultad {
+img .icono-dificultad {
   width: 30px;
   height: 30px;
   background-color: var(--color-primary-hover);
