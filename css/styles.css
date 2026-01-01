@@ -208,21 +208,21 @@ section {
   line-height: 1.6;
 }
 
-.nivel-dificultad.media {
+.nivel-dificultad-media {
   color: var(--color-primary);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.nivel-dificultad.baja {
+.nivel-dificultad-baja {
   color: var(--color-secondary);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.nivel-dificultad.alta {
+.nivel-dificultad-alta {
   color: var(--color-alta);
   display: flex;
   align-items: center;
