@@ -430,7 +430,8 @@ section {
 }
 
 /*Para que el icono y el texto estén en la misma línea*/
-.actividad .nivel-dificultad{
+.actividad .nivel-dificultad,
+.punto-encuentro{
   display: flex;
   gap: 10px;
 }
