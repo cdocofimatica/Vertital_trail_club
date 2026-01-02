@@ -46,11 +46,11 @@ body {
   line-height: 1.6;
 }
 
-/*img {
+img {
   max-width: 100%;
   height: auto;
   display: block;
-}*/
+}
 
 a {
   color: inherit;
@@ -194,9 +194,13 @@ section {
   color: var(--color-white);
 }
 
-.icono{
+.icono,
+.icono-dificultad {
   width: 30px;
   height: 30px;
+  flex-shrink: 0;
+  background-color: var(--color-primary-hover);
+  border-radius: 3px;
 }
 
 .etiqueta{
@@ -229,12 +233,12 @@ section {
   gap: 0.5rem;
 }
 
-img .icono-dificultad{
+/*.icono-dificultad{
   width: 30px;
   height: 30px;
   background-color: var(--color-primary-hover);
   border-radius: 3px;
-}
+}*/
 /* ===================================================
    7. HOME – SECCIONES ESPECÍFICAS
 =================================================== */
@@ -858,6 +862,3 @@ img .icono-dificultad{
   }*/
 
 }
-
-
-
