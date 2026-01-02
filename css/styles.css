@@ -479,9 +479,13 @@ section {
   background-image: url('../assets/images/AccesoRapido-03.jpg');
 }
 
+.galeria{
+  padding: 0;
+}
+
 .galeria-01{
   background-image: url('../assets/images/Galeria-01-Samarines-Candelaria-Tenerife.jpg');
-  height: 400px;
+  height: 400px;  
 }
 
 .galeria-02{
@@ -556,6 +560,12 @@ section {
   border-radius: 10px;
 }
 
+.foto_galeria{
+  position: relative;  
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .video{
   position: relative;
   width: 100%;
@@ -570,7 +580,9 @@ section {
   object-fit: cover;
 }
 
-.persona_datos{
+.persona_datos,
+.galeria_datos,
+.video_datos{
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -586,7 +598,7 @@ section {
   object-fit: cover;
 }
 
-.video_datos{
+/*.video_datos{
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -594,7 +606,7 @@ section {
   color: var(--color-white);
   padding: 10px;
   text-align: center;
-}
+}*/
 
 .equipo_datos h3{
   margin: 0;
