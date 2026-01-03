@@ -718,6 +718,9 @@ section {
   display: none;
 }
 
+.centrado{
+  text-align: center;
+}
 
 /* ===================================================
    9. MEDIA QUERIES – VERSIÓN DE ESCRITORIO
@@ -884,3 +887,4 @@ section {
   }*/
 
 }
+
