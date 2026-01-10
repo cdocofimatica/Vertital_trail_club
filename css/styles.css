@@ -712,9 +712,13 @@ section {
   .header-container {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
   }
 
+  .header-top{
+    width: 100%;
+  }
+  
   .header-bottom{
     display: flex;
     justify-content: flex-end;
@@ -728,9 +732,9 @@ section {
   width: 220px;
   height: 180px;
   background-image: url("../assets/images/Logotipo-horizontal.jpg");
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: contain;*/
 }
 
   .main-nav ul {
