@@ -133,7 +133,12 @@ section {
 }
 
 .logo{
-  width: 20%;
+  width: 100%;
+  height: 60px;
+  background-image: url("../assets/images/Logotipo-Vertical.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .slogan {
@@ -719,6 +724,15 @@ section {
     width: auto;
   }
 
+  .logo{
+  width: 220px;
+  height: 180px;
+  background-image: url("../assets/images/Logotipo-horizontal.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
   .main-nav ul {
     flex-direction: row;
     gap: 1.5rem;
@@ -821,7 +835,7 @@ section {
     margin-bottom: 2rem;
   }
 
-    .menu-toggle {
+  .menu-toggle {
     display: none;
   }
 
