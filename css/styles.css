@@ -336,7 +336,7 @@ section {
 }
 
 .hero-content h1{
-  font-size: 3rem;
+  font-size: 2rem;
   /*He utilizado un color RGBA para aplicar transparencia únicamente al fondo, manteniendo la legibilidad del texto*/
   background-color: rgba(46, 46, 46, 0.6);;
   color: var(--color-white);
